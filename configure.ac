@@ -1,0 +1,10 @@
+AC_PREREQ([2.69])
+AC_INIT([minimal-example], [0.1], [])
+AM_INIT_AUTOMAKE
+LT_INIT
+AC_PROG_MAKE_SET
+AC_PROG_CXX
+AC_LANG(C++)
+AC_CONFIG_FILES([Makefile])
+AC_SUBST(srcdir)
+AC_OUTPUT
