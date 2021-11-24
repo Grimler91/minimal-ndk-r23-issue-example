@@ -41,3 +41,12 @@ CANNOT LINK EXECUTABLE "./main": cannot locate symbol "__extenddftf2" referenced
 
 Where the missing `__extenddftf2` symbol comes from the use of
 `static_cast<long double>` in test.cpp.
+
+If the project is compiled with cmake instead:
+
+```
+CXXFLAGS=-O0 CXX=${CCPREFIX}clang++ CC=${CCPREFIX}clang cmake .
+make
+```
+
+then the resulting library and program work fine.
